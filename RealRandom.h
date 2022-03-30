@@ -13,6 +13,8 @@ class RealRandom
 public:
     RealRandom(int analogRef);
     byte random();
+    unsigned int randomInt();
+    float randomNormal();
 
 private:
     int waitTime;
@@ -23,6 +25,7 @@ private:
     byte rotate(byte b, int r);
     void pushLeftStack(byte bitToPush);
     void pushRightStackRight(byte bitToPush);
+    float mapIntToF(int x, int in_h, int in_l, float out_h, float out_l);
 };
 
 #endif

@@ -62,3 +62,18 @@ byte RealRandom::random() {
   
     return lastByte ^ leftStack ^ rightStack;
 }
+
+unsigned int RealRandom::randomInt(){
+    byte a = random();
+    byte b = random();
+    return a | (b << 8);
+}
+
+float RealRandom::randomNormal(){
+    unsigned int a = randomInt();
+    return mapIntToF(a, 65535, 0, 1.0, 0.0);
+}
+
+float RealRandom::mapIntToF(int x, int in_h, int in_l, float out_h, float out_l){
+    return ((float)(x - in_h)) * (out_h - out_l) / ((float)(in_h - in_l)) + out_l;
+}
