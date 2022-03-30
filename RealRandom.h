@@ -25,7 +25,7 @@ private:
     byte rotate(byte b, int r);
     void pushLeftStack(byte bitToPush);
     void pushRightStackRight(byte bitToPush);
-    float mapIntToF(int x, int in_h, int in_l, float out_h, float out_l);
+    float mapIntToF(long x, long in_l, long in_h, float out_l, float out_h);
 };
 
 #endif

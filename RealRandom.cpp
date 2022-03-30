@@ -71,9 +71,10 @@ unsigned int RealRandom::randomInt(){
 
 float RealRandom::randomNormal(){
     unsigned int a = randomInt();
-    return mapIntToF(a, 65535, 0, 1.0, 0.0);
+    return mapIntToF(a, 0, 65535, 0, 1.0);
 }
 
-float RealRandom::mapIntToF(int x, int in_h, int in_l, float out_h, float out_l){
-    return ((float)(x - in_h)) * (out_h - out_l) / ((float)(in_h - in_l)) + out_l;
+float RealRandom::mapIntToF(long x, long in_l, long in_h, float out_l, float out_h){
+    float a = ((float)(x - in_h)) * (out_h - out_l) / ((float)(in_h - in_l)) + out_l;
+    return -a;
 }

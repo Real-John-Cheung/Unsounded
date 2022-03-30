@@ -24,22 +24,29 @@ void setup()
   pinMode(trigger, OUTPUT);
   digitalWrite(trigger, HIGH);
   cu = rangen.randomNormal() * 10;
+  //Serial.begin(9600);
 }
 
 void loop()
 {
-  cu += rangen.randomNormal() * 2;
+  cu += rangen.randomNormal() * 4;
+  //Serial.print("cu: ");
+  //Serial.println(cu);
   if (cu > th) {
     trig(1000 + map(rangen.randomInt(), 0, 65535, 500, 1500));
     cu = rangen.randomNormal() * 10;
   }
   for (int i = 0; i < 10; i++)
   {
+    //Serial.end();
     LowPower.powerDown(SLEEP_8S, ADC_OFF, BOD_OFF);
+    //Serial.begin(9600);
   }
 }
 
 void trig(int t) {
+  //Serial.print("t: ");
+  //Serial.println(t);
   digitalWrite(trigger, LOW);
   delay(t);
   digitalWrite(trigger, HIGH);
