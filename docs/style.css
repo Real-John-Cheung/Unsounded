@@ -16,3 +16,37 @@ body{
     font-family: 'Jost', sans-serif;
     font-size: 5vw;
 }
+
+.blog-container {
+    width: 100%;
+    margin: auto;
+}
+
+.blog-container h1{
+    font-family: 'Jost', sans-serif;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+.blog-container h2{
+    font-family: 'Jost', sans-serif;
+    font-size: 3vw;
+    font-weight: 400;
+    color: #555;
+}
+
+.blog-container p {
+    font-family: 'Roboto Mono', monospace;
+}
+
+.blog-container a {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 0.1em;
+}
+
+.blog-container a:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-thickness: 0.2em;
+}
