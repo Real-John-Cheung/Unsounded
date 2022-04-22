@@ -8,13 +8,50 @@ body{
     margin: auto;
 }
 
+#des {
+    width: 50vw;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 1.5vw;
+}
+
+#links {
+    width: 50vw;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Roboto mono', sans-serif;
+    font-size: 1vw;
+}
+
+#links a {
+    color: black;
+    text-decoration: underline;
+}
+
+#links a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
 #title{
     width: 50vw;
-    margin-top: 15vh;
+    margin-top: 5vh;
     margin-left: auto;
     margin-right: auto;
     font-family: 'Jost', sans-serif;
     font-size: 5vw;
+}
+
+#video{
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .blog-container {
@@ -22,7 +59,31 @@ body{
     margin: auto;
 }
 
+.blog-mainbody {
+    width: 70vw;
+    margin-left: 25vw;
+    margin-right: 0;
+}
+
+.blog-mainbody a {
+    color: black;
+    text-decoration: underline;
+}
+
+.blog-mainbody a:hover {
+    color: gray;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+.blog-mainbody .links {
+    font-family: 'Roboto Mono', monospace;
+    margin-top: 10vh;
+    font-size: 1vw;
+}
+
 .blog-container h1{
+    margin-top: 5vh;
     font-family: 'Jost', sans-serif;
     font-size: 4vw;
     font-weight: 400;
@@ -35,18 +96,14 @@ body{
     color: #555;
 }
 
+.blog-container h3{
+    font-family: 'Jost', sans-serif;
+    font-size: 2vw;
+    font-weight: 400;
+    color: #555;
+}
+
 .blog-container p {
+    font-size: 1.5vw;
     font-family: 'Roboto Mono', monospace;
-}
-
-.blog-container a {
-    color: black;
-    text-decoration: underline;
-    text-decoration-thickness: 0.1em;
-}
-
-.blog-container a:hover {
-    color: black;
-    text-decoration: underline;
-    text-decoration-thickness: 0.2em;
 }
