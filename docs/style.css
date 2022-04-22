@@ -82,6 +82,11 @@ body{
     font-size: 1vw;
 }
 
+.blog-mainbody #gallery {
+    width: 50vw;
+    aspect-ratio: 4/3;
+}
+
 .blog-container h1{
     margin-top: 5vh;
     font-family: 'Jost', sans-serif;
@@ -107,3 +112,36 @@ body{
     font-size: 1.5vw;
     font-family: 'Roboto Mono', monospace;
 }
+
+.gallery-page {
+    margin: auto;
+    width: 25vw;
+}
+
+#gallery .column {
+    width: 50%;
+    display: inline-block;
+}
+
+#gallery .row {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    width: 25vw;
+}
+
+.image{
+    width: 97%;
+    height: 97%;
+    margin: 0;
+    padding: 1.5%;
+}
+
+.slick-arrow{
+    color: black !important;
+}
+
